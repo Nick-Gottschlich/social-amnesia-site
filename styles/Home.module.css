@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 2rem 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,7 +8,6 @@
 }
 
 .main {
-  padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -53,13 +52,20 @@
 }
 
 .title,
+.subtitle,
 .description {
   text-align: center;
 }
 
-.description {
-  line-height: 1.5;
+.subtitle {
+  line-height: 1;
+  font-size: 2rem;
+}
+
+.paragraph {
+  line-height: 1;
   font-size: 1.5rem;
+  color: #919191;
 }
 
 .code {
@@ -113,6 +119,26 @@
 
 .logo {
   height: 1em;
+}
+
+.twitterLogo {
+  padding-top: 8px;
+  padding-left: 3px;
+  padding-right: 3px;
+  height: 25px;
+}
+
+.redditLogo {
+  padding-top: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  height: 25px;
+}
+
+.exampleVideo {
+  max-width: 800px;
+  border: 1px solid lightgrey;
+  margin-top: 20px;
 }
 
 @media (max-width: 600px) {

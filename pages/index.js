@@ -10,16 +10,46 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <img 
+          src='./SALogoTransparent.png' 
+          alt="Social Amnesia" 
+          height="125" 
+        />
+        
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Social Amnesia
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <h2 className={styles.subtitle}>
+          Forget the past
+        </h2>
 
-        <div className={styles.grid}>
+        <div className={styles.paragraph}>
+          <span>
+          Social Amnesia makes sure your 
+          </span>
+          <img 
+            src='./TwitterLogo.png' 
+            alt="Twitter"
+            className={styles.twitterLogo}
+          /> 
+          <span>and</span>
+          <img 
+            src='./RedditLogo.png' 
+            alt="Reddit" 
+            className={styles.redditLogo}
+          /> 
+          <span>accounts only show your posts from recent history, not from "that phase" 5 years ago. </span>
+        </div>
+
+        <video 
+          src="./SAExampleVideo.webm" 
+          alt="Social Amnesia example video"
+          controls
+          className={styles.exampleVideo}
+        />
+
+        {/* <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
@@ -47,10 +77,10 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
 
-      <footer className={styles.footer}>
+      {/* <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -59,7 +89,7 @@ export default function Home() {
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
-      </footer>
+      </footer> */}
     </div>
   )
 }
