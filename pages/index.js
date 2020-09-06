@@ -3,19 +3,39 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <img 
-          src='./SALogoTransparent.png' 
-          alt="Social Amnesia" 
-          height="125" 
+      <header className={styles.header}>
+        <img
+          src='./SALogoTransparent.png'
+          alt="Social Amnesia"
+          className={styles.headerLogo}
         />
-        
+
+        <a className={styles.headerLink} href="https://github.com/Nick-Gottschlich/Social-Amnesia/releases/latest" target="_blank">
+          Download
+        </a>
+
+        <a className={styles.headerLink} href="https://github.com/sponsors/Nick-Gottschlich" target="_blank">
+          Donate
+        </a>
+
+        <a className={styles.headerLink} href="https://github.com/Nick-Gottschlich/Social-Amnesia" target="_blank">
+          GitHub
+        </a>
+      </header>
+
+      <main className={styles.container}>
+        <img
+          src='./SALogoTransparent.png'
+          alt="Social Amnesia"
+          height="125"
+        />
+
         <h1 className={styles.title}>
           Social Amnesia
         </h1>
@@ -26,70 +46,35 @@ export default function Home() {
 
         <div className={styles.paragraph}>
           <span>
-          Social Amnesia makes sure your 
+            Social Amnesia makes sure your
           </span>
-          <img 
-            src='./TwitterLogo.png' 
+          <img
+            src='./TwitterLogo.png'
             alt="Twitter"
             className={styles.twitterLogo}
-          /> 
+          />
           <span>and</span>
-          <img 
-            src='./RedditLogo.png' 
-            alt="Reddit" 
+          <img
+            src='./RedditLogo.png'
+            alt="Reddit"
             className={styles.redditLogo}
-          /> 
+          />
           <span>accounts only show your posts from recent history, not from "that phase" 5 years ago. </span>
         </div>
 
-        <video 
-          src="./SAExampleVideo.webm" 
+        <video
+          src="./SAExampleVideo.webm"
           alt="Social Amnesia example video"
           controls
           className={styles.exampleVideo}
         />
 
-        {/* <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div> */}
+        <div className={styles.lastParagraph}>
+          Want to know more? Check out the{' '}
+          <a className={styles.link} href="https://github.com/Nick-Gottschlich/Social-Amnesia" target="_blank">GitHub</a>
+          {' '}to contribute, download the latest release, and find out more information.
+        </div>
       </main>
-
-      {/* <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer> */}
     </div>
   )
 }
